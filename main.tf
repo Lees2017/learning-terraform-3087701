@@ -58,7 +58,7 @@ module "alb" {
   security_group = module.blog_sg.security_group_id
   # Security Group
   
-   {
+   
     all_http = {
       from_port   = 80
       to_port     = 80
@@ -73,7 +73,7 @@ module "alb" {
       description = "HTTPS web traffic"
       cidr_ipv4   = "0.0.0.0/0"
     }
-  }
+  
   {
     all = {
       ip_protocol = "-1"
