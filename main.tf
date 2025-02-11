@@ -74,7 +74,7 @@ module "alb" {
       cidr_ipv4   = "0.0.0.0/0"
     }
   }
-  security_group_egress_rules = {
+  {
     all = {
       ip_protocol = "-1"
       cidr_ipv4   = "10.0.0.0/16"
